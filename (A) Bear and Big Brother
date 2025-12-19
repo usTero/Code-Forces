@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+ 
+void solve(int n, int m){
+    int y = 0;
+    while(n <= m){
+        n*= 3;
+        m*= 2;
+        y++;
+    }
+    cout << y << endl;
+} 
+ 
+int main(){
+    int a, b;
+    cin >> a >> b;
+    solve(a,b);
+    return 0;
+}
