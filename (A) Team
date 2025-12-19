@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+void solve(int n){
+    int a[n];
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        int sure = 0;
+        for(int j = 0; j < 3; j++){
+            cin >> a[i];
+            if(a[i] == 1){
+                sure++;
+            }
+        }
+        if(sure >= 2){
+            count++;
+        }
+    }
+    cout << count;
+}   
+ 
+int main(){
+    int w;
+    cin >> w;
+    solve(w);
+    return 0;
+}
