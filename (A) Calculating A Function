@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+#define ll long long
+ 
+unordered_map<int, long long> memo;
+ 
+void solve(ll n){
+    if(n % 2 == 0)
+        cout << n / 2;
+    else
+        cout << -(n + 1) / 2;
+}
+ 
+int main(){
+    ll a;
+    cin >> a;
+    solve(a);
+    return 0;
+}
