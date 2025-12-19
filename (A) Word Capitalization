@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+ 
+void solve(str n){
+    int i = 0;
+    for(char c : n){
+        if(i == 0) cout << (char)toupper(c);
+        else cout << c;
+        i++;
+    }
+} 
+ 
+int main(){
+    str a;
+    cin >> a;
+    solve(a);
+    return 0;
+}
