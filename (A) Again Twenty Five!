@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+#define ll long long
+ 
+void solve(int n){
+    cout << 25; // dua digit terkhir 5^n {n > 2} selalu 25
+}
+int main(){
+    int a;
+    cin >> a;
+    solve(a);
+    return 0;
+}
