@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+#define ll long long
+ 
+void solve(str n, str m){
+    int l = 0, r = m.length()-1;
+    while(l < r){
+        swap(m[l], m[r]);
+        l++;
+        r--;
+    }
+    if(n == m){
+        cout << "YES";
+    }else{
+        cout << "NO";
+    }
+}
+ 
+int main(){
+    str a, b;
+    cin >> a;
+    cin >> b;
+    solve(a,b);
+    return 0;
+}
