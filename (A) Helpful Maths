@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+ 
+void solve(str n){
+    int a = 0, i = 0;
+    int arr[1001];
+    for (char c : n){
+        if(c == '+'){
+            continue;
+        }else{
+            arr[i] = c - '0';
+            i++;
+        }
+    }
+    sort(arr, arr + i);
+    for (int j = 0; j < i; j++){
+        a += arr[j];
+        if (j != i - 1){
+            cout << arr[j] << "+";
+        }else{
+            cout << arr[j];
+        }
+    }
+} 
+ 
+int main(){
+    str a;
+    cin >> a;
+    solve(a);
+    return 0;
+}
