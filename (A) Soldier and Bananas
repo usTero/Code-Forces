@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+#include <cctype>
+using namespace std;
+ 
+#define str string
+ 
+void solve(int n, int m, int k){
+    int ans = 0, y = 0;
+    for(int i = 1; i <= k; i++){
+        ans += i*n;
+    }
+    if(ans> m ){
+        y = abs(ans - m);
+    }
+    cout << y << "\n";
+} 
+ 
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    solve(a, b, c);
+    return 0;
+}
