@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+ 
+void solve(int n, int m){
+    while(m > 0){
+        if(n%10 == 0){
+            n/= 10;
+            m--;
+        }else{
+            n--;
+            m--;
+        }
+    }
+    cout << n << "\n";
+} 
+ 
+int main(){
+    int a, b;
+    cin >> a >> b;
+    solve(a, b);
+    return 0;
+}
