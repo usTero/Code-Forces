@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#define str string
+#define ll long long
+ 
+void solve(int x){
+    int score[x], best = 0;
+    for(int i = 0; i < x; i++){
+        cin >> score[i];
+    }
+    int low = score[0], high = score[0];
+    for(int i = 1; i < x; i++){
+        if(score[i] < low){
+            low = score[i];
+            best++;
+        }else if(score[i] > high){
+            high = score[i];
+            best++;
+        }else{
+            continue;
+        }
+    }
+    cout << best << '\n';
+}
+ 
+int main(){
+    int a;
+    cin >> a;
+    solve(a);
+    return 0;
+}
